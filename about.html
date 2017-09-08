@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+
+<body>
+    <h1>About Page</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <p>Return to <a href="index.html">Hello World</a></p>
+    <p>Open this in broswer: <a href="https://electron.atom.io/docs" id="ext-link">Electron Docs</a></p>
+
+    <button onclick="javascript:window.close()">Close</button>
+</body>
+<!-- <script src="index.js" charset="utf-8"></script> -->
+
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+
+</html>
